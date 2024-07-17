@@ -10,18 +10,48 @@ font-family: montserrat;
 }
 body {
 text-align: center;
+background-color: #781500;
 }
+h1 {
+color: wheat;
+}
+      <style>
+  .pushable {
+    background: #781500;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: wheat;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+</style>
+
+      
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>CakmakCraft Official Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        <h1>CakmakCraft Official Website</h1>  
+        <h1>CakmakCraft Official Website</h1>
+      <button id="copy" class="pushable" data-copied="Copied!" data-clipboard-target="#space-1">Copy Server Adress!</button>
     </main>
   </body>
 </html>
